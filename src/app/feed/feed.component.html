@@ -1,0 +1,71 @@
+<div class="campoPesquisa">
+  <div class="grid-container">
+    <mat-form-field class="example-full-width" appearance="fill" style="width: 100%; text-align: center;">
+      <mat-label>Busque uma notícia</mat-label>
+      <input matInput #searchInput>
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+</div>
+
+<div *ngIf="results$ | async as search">
+  <mat-grid-list [cols]="breakpoint" rowHeight="350px" (window:resize)="handleSize($event)">
+    <mat-grid-tile *ngFor="let result of results$ | async" [colspan]="result.cols" [rowspan]="result.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{result.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{result.subtitulo}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="result.img" [alt]="result.titulo">
+        <mat-card-content class="dashboard-card-content">
+          <div>{{result.conteudo}}</div>
+        </mat-card-content>
+        <mat-nav-list>
+          <mat-list-item *ngFor="let link of result.link">
+            <a matLine [href]="link.ref">{{ link.texto }}</a>
+            <button mat-icon-button matTooltip="Mais informações">
+              <mat-icon>info</mat-icon>
+            </button>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div class="grid-container" *ngIf="cards$ | async as card; else loading">
+  <h1 class="mat-h1" *ngIf="usuario$ | async as usuario">Olá, {{usuario.displayName}}.</h1>
+  <h2 class="mat-h1">Seja bem vindo ao BookShelf!</h2>
+  <h2>Este é o seu Feed de Notícias.</h2>
+
+<mat-grid-list [cols]="breakpoint" rowHeight="350px" (window:resize)="handleSize($event)">
+    <mat-grid-tile *ngFor="let card of cards$ | async"  [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{card.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{card.subtitulo}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="card.img" [alt]="card.titulo">
+        <mat-card-content class="dashboard-card-content">
+          <div>{{card.conteudo}}</div>
+        </mat-card-content>
+        <mat-nav-list>
+          <mat-list-item *ngFor="let link of card.link">
+            <a matLine [href]="link.ref">{{ link.texto }}</a>
+            <button mat-icon-button matTooltip="Mais informações">
+              <mat-icon>info</mat-icon>
+            </button>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<ng-template #loading>
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

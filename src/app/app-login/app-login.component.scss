@@ -1,0 +1,88 @@
+.full-width {
+  width: 100%;
+}
+
+.shipping-card {
+  min-width: 120px;
+  margin: 20px auto;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+.example-card {
+  max-width: 900px;
+}
+.example-header-image {
+  background-image: url('../../assets/imagens/ShelfBook.png');
+  background-size: cover;
+}
+mat-card-footer{
+  button{
+    margin: 0.3rem;
+  }
+  margin: auto;
+}
+
+.form-container{
+ display: block;
+ max-width: 500px;
+ margin: auto;
+ background-color: #eceff1;
+ padding: 48px;
+ border-radius: 16px;
+}
+
+.form-container mat-form-field {
+  width: 100%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top{
+  margin-top: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tentativas{
+  background-color:#F44336;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px 30px;
+  width: 50%;
+}
+.tentativas-p{
+  margin-top: 15px;
+}
+.tentativas-n {
+  color: #F44336;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}

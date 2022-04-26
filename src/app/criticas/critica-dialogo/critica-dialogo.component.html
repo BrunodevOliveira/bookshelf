@@ -1,0 +1,7 @@
+<h1 mat-dialog-title>Resenha Crítica:</h1>
+<div mat-dialog-content *ngIf="resenhas$ | async as resenhas">
+  <p>{{resenhas}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Fechar</button>
+</div>

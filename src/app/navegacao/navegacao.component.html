@@ -1,0 +1,90 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <a href="/feed">
+      <img mat-card-image [src]="logoMenu" width="231" alt="Imagem do logo no menu">
+    </a>
+    <div class="emailLateral"*ngIf="usuario$ | async as usuario">
+      <p>
+        <span matBadge="4" matBadgeOverlap="false">{{usuario.email}}</span>
+      </p>
+    </div>
+    <mat-divider></mat-divider>
+    <!-- Menu Lateral - Informações Gerais -->
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-icon>home</mat-icon>
+          <mat-panel-title >
+            Menu Principal
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-nav-list *ngFor="let itemMenu of itensMenu$ | async; index as i">
+          <a mat-list-item *ngIf="itemMenu.hab === true" [href]="itemMenu.linkMenu">{{itemMenu.labelMenu}}</a>
+          </mat-nav-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+     <!-- Menu Lateral - Informações de Livros -->
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-icon>book</mat-icon>
+            <mat-panel-title>
+              Livros
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list *ngFor="let livroMenu of livrosMenu$ | async; index as i">
+            <a mat-list-item *ngIf="livroMenu.hab === true" [href]="livroMenu.linkMenu">{{livroMenu.labelMenu}}</a>
+          </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <!-- Menu Lateral - Informações de Biblioteconomia -->
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-icon>library_books</mat-icon>
+            <mat-panel-title>
+              Biblioteconomia
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list *ngFor="let bibliMenu of bibliMenu$ | async; index as i">
+            <a mat-list-item *ngIf="bibliMenu.hab === true" [href]="bibliMenu.linkMenu">{{bibliMenu.labelMenu}}</a>
+          </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar [color]="cor">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Menu BookShelf Lateral">menu</mat-icon>
+      </button>
+      <img mat-card-sm-image *ngIf="innerWidth > 600" [width]="lIcone" [height]="aIcone" [src]="iconeGeral">
+      <button mat-mini-fab [color]="corBotao" (click)="mudarCor()">
+        <mat-icon>format_color_fill</mat-icon>
+      </button>
+      <ng-container *ngIf="usuario$ | async as usuario; else botaoLogin">
+        <button mat-raised-button [color]="cor" [matMenuTriggerFor]="usuarioMenu" matTooltip="Conta BookShelf">
+          <img class="imgPerfil" src= {{usuario.photoURL}} alt="foto de perfil">
+          <!-- <mat-icon *ngIf="innerWidth > 600" class="mat-18">local_library</mat-icon> -->
+          {{usuario.displayName}}
+          <mat-icon>expand_more</mat-icon>
+        </button>
+      </ng-container>
+      <ng-template #botaoLogin>
+        <button mat-raised-button [color]="cor" (click)="abrirLogin('Tela de Login')" matTooltip="Entre com sua conta">
+          Login
+        </button>
+      </ng-template>
+    </mat-toolbar>
+    <mat-menu #usuarioMenu="matMenu" >
+      <button mat-menu-item routerLink="/perfil" matTooltip="Exibir informações do perfil">Meu Perfil</button>
+      <button mat-menu-item (click)="sairUsuario()" matTooltip="Sair da conta">Logout</button>
+    </mat-menu>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

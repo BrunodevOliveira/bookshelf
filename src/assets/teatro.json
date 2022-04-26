@@ -1,0 +1,12 @@
+[
+  {"_idTeatro":"1", "tituloTeatro": "História mundial do teatro", "autorTeatro":"Margot Berthold", "isbnTeatro":"9788527302289", "editoraTeatro":"Perspectiva", "anoTeatro":"2010"},
+  {"_idTeatro":"2", "tituloTeatro": "História Concisa Do Teatro Brasileiro: 1570-1908", "autorTeatro":"Décio De Almeida Prado", "isbnTeatro":"9788531404955", "editoraTeatro":"EDUSP", "anoTeatro":"2020"},
+  {"_idTeatro":"3", "tituloTeatro": "Panorama do Teatro Brasileiro", "autorTeatro":"Sábato Magaldi", "isbnTeatro":"9788526005617", "editoraTeatro":"Global Editora", "anoTeatro":"2004"},
+  {"_idTeatro":"4", "tituloTeatro": "Hamlet", "autorTeatro":"William Shakespeare", "isbnTeatro":"9788582850145", "editoraTeatro":"Penguin", "anoTeatro":"2015"},
+  {"_idTeatro":"5", "tituloTeatro": "O Herói de Mil Faces", "autorTeatro":"Joseph Campbell", "isbnTeatro":"9788531502941", "editoraTeatro":"Pensamento", "anoTeatro":"1989"},
+  {"_idTeatro":"6", "tituloTeatro": "A Arte do Ator", "autorTeatro":"Jean-Jacques Roubine", "isbnTeatro":"9788571101401", "editoraTeatro":"Zahar", "anoTeatro":"1987"},
+  {"_idTeatro":"7", "tituloTeatro": "A preparação do ator", "autorTeatro":"Constantin Stanislavski", "isbnTeatro":"9788520002681", "editoraTeatro":"Civilização Brasileira", "anoTeatro":"1994"},
+  {"_idTeatro":"8", "tituloTeatro": "A Construção da Personagem", "autorTeatro":"Constantin Stanislavski", "isbnTeatro":"9788520001097", "editoraTeatro":"Civilização Brasileira", "anoTeatro":"1993"},
+  {"_idTeatro":"9", "tituloTeatro": "A Criação de um Papel", "autorTeatro":"Constantin Stanislavski", "isbnTeatro":"9788520002674", "editoraTeatro":"Civilização Brasileira", "anoTeatro":"1995"},
+  {"_idTeatro":"10", "tituloTeatro": "Teatro do Oprimido e Outras Poéticas Políticas", "autorTeatro":"Augusto Boal", "isbnTeatro":"9788573267303", "editoraTeatro":"Editora 34", "anoTeatro":"2019"}
+]

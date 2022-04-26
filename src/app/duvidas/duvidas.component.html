@@ -1,0 +1,119 @@
+<div class="grid-container">
+  <mat-toolbar color="accent">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with help_outline icon" matTooltip="Dúvidas">
+      <mat-icon>help_outline</mat-icon>
+    </button>
+    <span>DÚVIDAS FREQUENTES</span>
+  </mat-toolbar>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title >
+          <strong>O que é o BookShelf?</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O BookShelf é uma estante virtual de livros, onde os usuários cadastrados podem ter acesso a seções de gêneros de livros, feed de notícias mais interessantes para os amantes da literatura, reportagem sobre os principais livros do mês atual e um espaço dedicado para biblioteconomia com informações úteis e de credibilidade.
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="spacer"></div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title >
+          <strong>Como se cadastrar no BookShelf?</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <table>
+        <tr>1. Acesse o BookShelf através do link informado;</tr>
+        <tr>2. Preencha o seu nome;</tr>
+        <tr>3. Insira uma URL de imagem válida para a sua foto de perfil;</tr>
+        <tr>4. Preencha seu e-mail;</tr>
+        <tr>5. Crie uma senha e confirme novamente a sua senha;</tr>
+        <tr>6. Clique em “Cadastrar”;</tr>
+        <tr>7. Você será redirecionado para o Menu CDD de livros.</tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="spacer"></div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Como fazer login no BookShelf?</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <table>
+        <tr>1. No canto superior direito da sua tela clique em “Login”;</tr>
+        <tr>2. Insira seu e-mail e senha;</tr>
+        <tr>3. Clique no botão “Entrar”.</tr>
+      </table>
+      <br />
+      <table>
+        <thead>Método alternativo:</thead>
+        <tr>1. No canto superior direito da sua tela clique em “Login”;</tr>
+        <tr>2. Clique no botão de símbolo do Google;</tr>
+        <tr>3. Escolha a sua Conta Google e clique nela;</tr>
+        <tr>4. Você será redirecionado para o Menu CDD de livros.</tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="spacer"></div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Como recuperar a senha?</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <table>
+        <tr>1. Clique no botão “Login”;</tr>
+        <tr>2. Insira seu e-mail e senha;</tr>
+        <tr>3. Caso não lembre da sua senha, você poderá ter três tentativas;</tr>
+        <tr>4. Se mesmo assim você não se lembre da sua senha, o BookShelf irá solicitar uma verificação reCaptcha para evitar que robôs ou pessoas indesejadas tentem adivinhar a sua senha por várias vezes.</tr>
+        <tr>5. Você poderá clicar em “Esqueci minha senha”;</tr>
+        <tr>6. Informe o seu e-mail cadastrado no BookShelf;</tr>
+        <tr>7. Você receberá um link no seu e-mail para a recuperação de senha e cadastramento de uma nova senha de acesso.</tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="spacer"></div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Como ver o meu perfil?</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <table>
+        <tr>1. Clique no botão onde está escrito o seu nome informado no cadastro do BookShelf;</tr>
+        <tr>2. Clique em “Meu Perfil”;</tr>
+        <tr>3. Suas informações cadastrais estarão disponíveis no centro da tela.</tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="spacer"></div>
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Como navegar no BookShelf? </strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+        <table>
+        <tr>1. Acesse sua BookShelf;</tr>
+        <tr>2. Na lateral esquerda estará disponível uma aba de opções que você poderá navegar;</tr>
+        <tr>3. No <strong>Menu Principal</strong> estarão disponíveis a Classificação Decimal, Feed de Notícias, Especial do Mês, Dúvidas Frequentes, Possíveis Erros e Críticas Literárias.</tr>
+        <tr>4. Em <strong>Livros</strong> estarão disponíveis uma lista de livros de Artes, Empreendedorismo, Psicologia, Teatro, Tecnologia, Direito, Sagas Literárias e Sugestões.</tr>
+        <tr>5. Em <strong>Biblioteconomia</strong> estão disponíveis as Bibliotecas Virtuais, Base de Dados, Normas da ABNT e ISBN.</tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>
+

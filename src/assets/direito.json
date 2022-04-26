@@ -1,0 +1,12 @@
+[
+  {"_idDireito":"1", "tituloDireito": "O Príncipe", "autorDireito":"Nicolau Maquiavel", "isbnDireito":"8572839046", "editoraDireito":"EdiPro", "anoDireito":"2018"},
+  {"_idDireito":"2", "tituloDireito": "Justiça: O que é fazer a coisa certa", "autorDireito":"Michael Sandel", "isbnDireito":"852001030X", "editoraDireito":"Civilização Brasileira", "anoDireito":"2011"},
+  {"_idDireito":"3", "tituloDireito": "Código de Defesa do Consumidor", "autorDireito":"Inácio Conceição", "isbnDireito":"6556600512", "editoraDireito":"EdiPro", "anoDireito":"2021"},
+  {"_idDireito":"4", "tituloDireito": "Vigiar e punir: Nascimento da prisão", "autorDireito":"Michael Focault", "isbnDireito":"8532605087", "editoraDireito":"Vozes", "anoDireito":"2014"},
+  {"_idDireito":"5", "tituloDireito": "Dos Delitos e das Penas", "autorDireito":"Cesare Beccaria", "isbnDireito":"8572839259", "editoraDireito":"EdiPro", "anoDireito":"2017"},
+  {"_idDireito":"6", "tituloDireito": "Manual de Epicteto: A arte de viver melhor", "autorDireito":"Epicteto", "isbnDireito":"6556600334", "editoraDireito":"EdiPro", "anoDireito":"2021"},
+  {"_idDireito":"7", "tituloDireito": "Apologia de Sócrates", "autorDireito":"Platão", "isbnDireito":"8552100665", "editoraDireito":"EdiPro", "anoDireito":"2019"},
+  {"_idDireito":"8", "tituloDireito": "Como passar na OAB - 1ª Fase - 5.000 Questões Comentadas", "autorDireito":"Wander Garcia", "isbnDireito":"6555151730", "editoraDireito":"Foco", "anoDireito":"2020"},
+  {"_idDireito":"9", "tituloDireito": "Vade Mecum", "autorDireito":"Saraiva Educação", "isbnDireito":"6555597941", "editoraDireito":"Saraiva Jur", "anoDireito":"2021"},
+  {"_idDireito":"10", "tituloDireito": "Direito Constitucional Esquematizado", "autorDireito":"Pedro Lenza", "isbnDireito":"6555594918", "editoraDireito":"Saraiva Jur", "anoDireito":"2021"}
+]

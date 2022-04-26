@@ -1,0 +1,12 @@
+[
+  {"_idTecnologia":"1", "tituloTecnologia": "21 lições para o século 21", "autorTecnologia":"Yuval Harari", "isbnTecnologia":"8535930914", "editoraTecnologia":"Companhia das Letras", "anoTecnologia":"2018"},
+  {"_idTecnologia":"2", "tituloTecnologia": "A quarta revolução industrial", "autorTecnologia":"Klaws Schwab", "isbnTecnologia":"9788581861531", "editoraTecnologia":"Edipro", "anoTecnologia":"2018"},
+  {"_idTecnologia":"3", "tituloTecnologia": "Os meios de comunicação como extensões do homem", "autorTecnologia":"Marshall Mcluhan", "isbnTecnologia":"8531602580", "editoraTecnologia":"Cultrix", "anoTecnologia":"1968"},
+  {"_idTecnologia":"4", "tituloTecnologia": "De zero a um", "autorTecnologia":"Peter Thiel", "isbnTecnologia":"8539006200", "editoraTecnologia":"Objetiva", "anoTecnologia":"2014"},
+  {"_idTecnologia":"5", "tituloTecnologia": "Inteligência Artificial", "autorTecnologia":"Kai-fu Lee", "isbnTecnologia":"6580634324", "editoraTecnologia":"Globo Livros", "anoTecnologia":"2019"},
+  {"_idTecnologia":"6", "tituloTecnologia": "Futuro Presente - O mundo movido à tecnologia", "autorTecnologia":"Guy Perelmuter", "isbnTecnologia":"8504021319", "editoraTecnologia":"Companhia Editora Nacional", "anoTecnologia":"2019"},
+  {"_idTecnologia":"7", "tituloTecnologia": "A regra é não ter regras", "autorTecnologia":"Reed Hastings", "isbnTecnologia":"6555600314", "editoraTecnologia":"Intríseca", "anoTecnologia":"2020"},
+  {"_idTecnologia":"8", "tituloTecnologia": "Como chegamos até aqui", "autorTecnologia":"Steve Johnson", "isbnTecnologia":"8537814121", "editoraTecnologia":"Zahar", "anoTecnologia":"2015"},
+  {"_idTecnologia":"9", "tituloTecnologia": "O que a Google faria?", "autorTecnologia":"Jeff Jarvis", "isbnTecnologia":"8520429424", "editoraTecnologia":"Manole", "anoTecnologia":"2009"},
+  {"_idTecnologia":"10", "tituloTecnologia": "Transformação Digital", "autorTecnologia":"David Rogers", "isbnTecnologia":"8551302728", "editoraTecnologia":"Autêntica Business", "anoTecnologia":"2017"}
+]

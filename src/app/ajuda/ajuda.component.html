@@ -1,0 +1,136 @@
+
+<div class="grid-container">
+  <mat-toolbar color="accent">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with error_outline icon" matTooltip="Erros">
+      <mat-icon>error_outline</mat-icon>
+    </button>
+    <span>POSSÍVEIS ERROS</span>
+  </mat-toolbar>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title >
+          <strong>[BK-ER001] E-mail inválido – Login de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário informe um e-mail inválido no momento de fazer login.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER002] Usuário não encontrado – Login de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário informe um e-mail que de fato exista, porém não está cadastrado previamente no banco de dados do BookShelf.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER003] Senha não confere – Login de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso a senha informada pelo Usuário seja incorreta, ou seja, não esteja previamente cadastrada pelo Usuário no BookShelf.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER004] Ocorreu um erro – Login de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso aconteça algum erro eventual não listado.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER005] E-mail inválido – Cadastro de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário informe um e-mail inválido ou inexistente.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER006] E-mail já cadastrado – Cadastro de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário tente fazer outro cadastro com um e-mail já cadastrado previamente no banco de dados do BookShelf.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER007] A senha deve ter 6 ou mais caracteres – Cadastro de Usuário</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário tente criar uma senha com menos de 6 caracteres para a sua conta no BookShelf.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER008] Enviado! Confira seu e-mail – Recuperação de conta</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      Um link de recuperação de senha será enviado para o e-mail cadastrado pelo Usuário no BookShelf, para que ele consiga cadastrar uma nova senha de acesso.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <div class="spacer"></div>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>[BK-ER009] E-mail informado não encontrado! – Recuperação de conta</strong>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      O erro será exibido caso o Usuário tente informar um e-mail diferente do que foi previamente cadastrado no BookShelf. Essa é uma medida de segurança para evitar que a conta do BookShelf do Usuário seja roubada.
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+</div>
+

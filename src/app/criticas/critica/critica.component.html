@@ -1,0 +1,62 @@
+<div>
+  <!-- Resultado de busca -->
+  <div>
+    <div class="grid-container">
+      <mat-form-field appearance="fill" style="width: 100%; text-align: center;" >
+        <mat-label>Busque uma crítica literária</mat-label>
+        <input matInput #searchInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="grid-container" *ngIf="result$ | async as busca">
+      <mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="handleSize($event)">
+        <mat-grid-tile *ngFor="let busca of result$| async" [colspan]="busca.cols" [rowspan]="busca.rows">
+          <mat-card class="dashboard-card">
+            <mat-card-title-group>
+              <mat-card-title>{{busca.titulo}}</mat-card-title>
+              <mat-card-subtitle>{{busca.subtitulo}}</mat-card-subtitle>
+              <img mat-card-image class="imgcard" [src]="busca.img" [alt]="busca.titulo">
+            </mat-card-title-group>
+            <mat-card-content>
+              {{busca.resumo}}
+            </mat-card-content>
+            <mat-card-actions class="texto">
+              <button mat-button (click)="abrirCriticas(busca.completo)" mat-raised-button>Saiba Mais</button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+
+  <div class="grid-container" *ngIf="criticas$ | async as critica; else loading">
+    <mat-toolbar color="accent">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with sticky_note_2 icon" matTooltip="Crítica">
+        <mat-icon>sticky_note_2</mat-icon>
+      </button>
+      <span>CRÍTICAS LITERÁRIAS</span>
+    </mat-toolbar>
+    <mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="handleSize($event)">
+      <mat-grid-tile *ngFor="let critica of criticas$ | async" [colspan]="critica.cols" [rowspan]="critica.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-title-group>
+              <mat-card-title>{{critica.titulo}}</mat-card-title>
+              <mat-card-subtitle>{{critica.subtitulo}}</mat-card-subtitle>
+              <img mat-card-image class="imgcard" [src]="critica.img" [alt]="critica.titulo">
+          </mat-card-title-group>
+          <mat-card-content>
+            {{critica.resumo}}
+          </mat-card-content>
+          <mat-card-actions class="texto">
+            <button mat-button (click)="abrirCriticas(critica.completo)" mat-raised-button>Saiba Mais</button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

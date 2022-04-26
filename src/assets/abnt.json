@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Associação Brasileira de Normas Técnicas - ABNT",
+    "img": "../../assets/imagens/abnt.png",
+    "link":[
+      {"ref":"https://www.abnt.org.br/", "texto":"Base de Dados de Periódicos em Biblioteconomia"}
+    ],
+    "cols": 1,
+    "rows": 1
+  },
+  {
+    "titulo": "Manual de Normalização: NITEG, PPGCI e PPGGOC - ECI-UFMG",
+    "img": "../../assets/imagens/eci.png",
+    "link":[
+      {"ref":"http://normalizacao.eci.ufmg.br/", "texto":"Manual de Normalização Produzido Pela Escola de Ciência da Informação - UFMG"}
+    ],
+    "cols": 1,
+    "rows": 1
+  }
+]

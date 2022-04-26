@@ -1,0 +1,6 @@
+[
+  {"linkMenu": "/biblioteconomia/bibvirtuais", "labelMenu":"Bibliotecas Virtuais", "hab": true},
+  {"linkMenu": "/biblioteconomia/basedados", "labelMenu":"Base de Dados", "hab": true},
+  {"linkMenu": "/biblioteconomia/abnt", "labelMenu":"Normas da ABNT", "hab": true},
+  {"linkMenu": "/biblioteconomia/isbn", "labelMenu":"ISBN", "hab": true}
+]

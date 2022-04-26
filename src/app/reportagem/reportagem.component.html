@@ -1,0 +1,75 @@
+<div class="grid-container">
+  <mat-toolbar color="accent">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with video_camera_front icon" matTooltip="Reportagens Especiais">
+      <mat-icon>video_camera_front</mat-icon>
+    </button>
+    <span>REPORTAGENS ESPECIAIS DO MÊS DE JANEIRO</span>
+  </mat-toolbar>
+  <mat-card class="mat-h3">Os livros exibidos são destaque do mês de janeiro de 2022. Com gêneros variados, eles possuem grande
+    apelo por bem estar pessoal, criatividade e autoconhecimento. A literatura brasileira é rica de grandes
+    obras escritas por artistas consagrados e reconhecidos mundialmente.
+  </mat-card>
+  <mat-grid-list [cols]="breakpoint" rowHeight="350px" (window:resize)="handleSize($event)">
+    <mat-grid-tile *ngFor="let reportagem of reportagem$ | async" [colspan]="reportagem.cols" [rowspan]="reportagem.rows">
+      <mat-card class="reportagem-card">
+        <img mat-card-image [src]="reportagem.img" alt="Livros">
+        <mat-card-title-group>
+          <mat-card-title class="titulo-cont">{{reportagem.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{reportagem.autor}}</mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-card-content class="reportagem-card-content">
+          <div>{{reportagem.descricao}}</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="grid-container">
+  <h1 class="mat-h1">Reportagens especiais do mês de janeiro</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let reportagem of reportagem$ | async" [colspan]="reportagem.cols" [rowspan]="reportagem.rows">
+      <mat-card class="reportagem-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{reportagem.titulo}}</mat-card-title>
+          <mat-card-subtitle>{{reportagem.subtitulo}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class= "img-report" mat-card-image [src]="reportagem.img" [alt]="reportagem.titulo">
+        <mat-card-content class="reportagem-card-content">
+          <div>{{reportagem.descricao}}</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->

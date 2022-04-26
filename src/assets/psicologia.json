@@ -1,0 +1,12 @@
+[
+  {"_idPsicologia":"1", "tituloPsicologia": "O Animal Social", "autorPsicologia":"Elliot Aronson", "isbnPsicologia":"9788534803458", "editoraPsicologia":"IBRASA", "anoPsicologia":"2009"},
+  {"_idPsicologia":"2", "tituloPsicologia": "Sobre a Psicopatologia da Vida Cotidiana", "autorPsicologia":"Sigmund Freud", "isbnPsicologia":"9788581861531", "editoraPsicologia":"Editora Lafonte", "anoPsicologia":"2020"},
+  {"_idPsicologia":"3", "tituloPsicologia": "Introdução à Psicologia", "autorPsicologia":"Linda L. Davidoff ", "isbnPsicologia":"9788534611251", "editoraPsicologia":"Pearson", "anoPsicologia":"2000"},
+  {"_idPsicologia":"4", "tituloPsicologia": "A Realidade é Real?", "autorPsicologia":"Paul Watzlawick", "isbnPsicologia":"9789727081400", "editoraPsicologia":"Relógio Dágua", "anoPsicologia":"1991"},
+  {"_idPsicologia":"5", "tituloPsicologia": "A Formação do Espírito Científico", "autorPsicologia":"Gaston Bachelard", "isbnPsicologia":"9788585910112", "editoraPsicologia":"Contraponto", "anoPsicologia":"2007"},
+  {"_idPsicologia":"6", "tituloPsicologia": "História da Loucura na Idade Clássica", "autorPsicologia":"Michel Foucault", "isbnPsicologia":"9788527311656", "editoraPsicologia":"Perspectiva", "anoPsicologia":"2019"},
+  {"_idPsicologia":"7", "tituloPsicologia": "Psicologia do Inconsciente", "autorPsicologia":"Carl Gustav Jung", "isbnPsicologia":"9788532604705", "editoraPsicologia":"Editora Vozes", "anoPsicologia":"2011"},
+  {"_idPsicologia":"8", "tituloPsicologia": "Psicologia Integral", "autorPsicologia":"Ken Wilber", "isbnPsicologia":"9788472453111", "editoraPsicologia":"Karios Editorial Sa", "anoPsicologia":"2003"},
+  {"_idPsicologia":"9", "tituloPsicologia": "Seis Estudos de Psicologia", "autorPsicologia":"Jean Piaget", "isbnPsicologia":"9788521804673", "editoraPsicologia":"Forense Universitária", "anoPsicologia":"2011"},
+  {"_idPsicologia":"10", "tituloPsicologia": "Inteligência Emocional", "autorPsicologia":"Daniel Goleman", "isbnPsicologia":"9788573020809", "editoraPsicologia":"Objetiva", "anoPsicologia":"1996"}
+]

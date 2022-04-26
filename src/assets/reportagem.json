@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Menos é Mais: Reflexões em Poucas Palavras",
+    "autor":"Padre Marcelo Rossi",
+    "img": "https://m.media-amazon.com/images/I/41Ag40N6J-L.jpg",
+    "descricao": "Resultado de incontáveis missas, conversas, sermões, homilias e até entrevistas que o Padre Marcelo Rossi realizou durante quase trinta anos de sacerdócio, esse livro reúne frases, pensamentos e aforismos.",
+    "data": "06 de janeiro de 2021",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Destransição, Baby",
+    "autor":"Torrey Peters",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51KdELXlnYL._SX343_BO1,204,203,200_.jpg",
+    "descricao": "Reese tinha quase tudo o que sempre desejou: uma relação estável com Amy, um apartamento em Nova York, e um bom trabalho. Tinha conquistado o que gerações anteriores de mulheres trans sonharam: uma vida mundana e confortável. A única falta que sentia era de uma criança.",
+    "data": "01 de novembro de 2021",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Flores da Morte",
+    "autor":"Jen Williams",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/418-coLb6NL._SX335_BO1,204,203,200_.jpg",
+    "descricao": "Após o suicídio da mãe, a ex-jornalista Heather Evans precisa voltar à sua casa de infância e descobre algo assustador: centenas de cartas trocadas entre sua mãe e o famoso assassino em série Michael Reave.",
+    "data": "01 de março de 2022",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Dúvida cruel 2: 80 respostas para perguntas ainda mais cabeludas",
+    "autor":"Kathy Wollard",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/517jmA6QN2L._SX345_BO1,204,203,200_.jpg",
+    "descricao": "No primeiro Dúvida Cruel, Mari e Iberê responderam a 80 perguntas que as pessoas gostariam de fazer, mas a curiosidade não acabou e os dois queriam desvendar mais enigmas.",
+    "data": "18 de janeiro de 2022",
+    "cols": 1,
+    "rows": 2
+  }
+]

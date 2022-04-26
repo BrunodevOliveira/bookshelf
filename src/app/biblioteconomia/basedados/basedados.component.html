@@ -1,0 +1,33 @@
+<div class="grid-container" *ngIf="cards$ | async as card; else loading">
+  <mat-toolbar color="accent">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with collections_bookmark icon" matTooltip="Base">
+      <mat-icon>collections_bookmark</mat-icon>
+    </button>
+    <span>BASES DE DADOS DE BIBLIOTECONOMIA</span>
+  </mat-toolbar>
+  <h2 class="mat-h2">Estas são algumas Bases de Dados na área de Biblioteconomia:</h2>
+  <mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="handleSize($event)">
+    <mat-grid-tile class="container" *ngFor="let card of cards$ | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{card.titulo}}</mat-card-title>
+        </mat-card-header>
+        <div>
+        <mat-list-item *ngFor="let link of card.link">
+          <a target="blank" matLine [href]="link.ref"><img class="imgcard" mat-card-image [src]="card.img" [alt]="card.titulo"></a>
+          <mat-divider></mat-divider>
+        </mat-list-item>
+        </div>
+        <mat-card-content class="dashboard-card-content">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<ng-template #loading>
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
+

@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Livros da Saga</h1>
+<div mat-dialog-content *ngIf="livros$ | async as livros">
+  <ul>
+    <li *ngFor="let livro of livros">{{livro.nome}}</li>
+  </ul>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Fechar</button>
+</div>

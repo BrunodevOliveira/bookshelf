@@ -1,0 +1,29 @@
+[
+  {
+    "titulo": "LIBES - Literatura Brasileira em Biblioteca Escolar",
+    "img": "../../assets/imagens/gebe.png",
+    "link":[
+      {"ref":"http://libes.eci.ufmg.br/", "texto":"Base de Dados Biblioteca Escolar"}
+    ],
+    "cols": 1,
+    "rows": 1
+  },
+  {
+    "titulo": "Base PERI - Profª Etelvina Lima",
+    "img": "../../assets/imagens/bperi.jpg",
+    "link":[
+      {"ref":"http://bases.eci.ufmg.br/", "texto":"Base de Dados de Periódicos em Biblioteconomia"}
+    ],
+    "cols": 1,
+    "rows": 1
+  },
+  {
+    "titulo": "Portal de Periódicos da CAPES",
+    "img": "../../assets/imagens/capes.jpg",
+    "link":[
+      {"ref":"https://www-periodicos-capes-gov-br.ezl.periodicos.capes.gov.br/index.php?", "texto":"Periódicos de Várias Áreas do Conhecimento"}
+    ],
+    "cols": 1,
+    "rows": 1
+  }
+]

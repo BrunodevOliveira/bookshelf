@@ -1,0 +1,24 @@
+.avatar{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.container{
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  padding: 48px;
+  border-radius: 16px;
+  text-align: center;
+ }
+
+ mat-card-header{
+  display: block;
+  margin: auto;
+ }
+
+ mat-card-content p{
+  font-weight: bold;
+  margin-bottom: 2px;
+ }

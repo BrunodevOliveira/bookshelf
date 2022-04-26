@@ -1,0 +1,83 @@
+[
+  {
+    "titulo": "Academia Brasileira de Letras (ABL)",
+    "img": "../../assets/imagens/abl.png",
+    "link":[
+      {"ref":"https://www.academia.org.br/", "texto":"Site da ABL"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Virtual de Literatura",
+    "img": "../../assets/imagens/BVLiteratura.jpg",
+    "link":[
+      {"ref":"http://www.biblio.com.br/", "texto":"Biblio"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Digital Mundial",
+    "img": "../../assets/imagens/BDMundial.jpg",
+    "link":[
+      {"ref":"https://www.loc.gov/collections/world-digital-library/about-this-collection/", "texto":"Library of Congress"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Nacional",
+    "img": "../../assets/imagens/BNacional.jpg",
+    "link":[
+      {"ref":"http://bndigital.bn.gov.br/", "texto":"Biblioteca Nacional Digital"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Virtual Anísio Teixeira",
+    "img": "../../assets/imagens/BVAnisio.jpg",
+    "link":[
+      {"ref":"http://www.bvanisioteixeira.ufba.br/", "texto":"Site da Biblioteca Virtual Anísio Teixeira - UFBA"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Virtual do Rio Grande do Sul",
+    "img": "../../assets/imagens/BVRGS.jpg",
+    "link":[
+      {"ref":"http://www.bibvirtual.rs.gov.br/", "texto":"Biblioteca Virtual RS"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Virtual Miguel de Cervantes",
+    "img": "../../assets/imagens/BVMiguel.jpg",
+    "link":[
+      {"ref":"http://www.cervantesvirtual.com/", "texto":"Cervantes Virtual"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Portal Domínio Público",
+    "img": "../../assets/imagens/dpublico.png",
+    "link":[
+      {"ref":"http://www.dominiopublico.gov.br/pesquisa/PesquisaObraForm.jsp", "texto":"Biblioteca Digital Domínio Público"}
+    ],
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Biblioteca Virtual da FAPESP",
+    "img": "../../assets/imagens/BVFAPESP.jpg",
+    "link":[
+      {"ref":"https://bv.fapesp.br/pt/", "texto":"Bilioteca Virtual FAPESP"}
+    ],
+    "cols": 1,
+    "rows": 2
+  }
+]

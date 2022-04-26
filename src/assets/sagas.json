@@ -1,0 +1,102 @@
+[
+{
+  "_idSagas": 1,
+  "titulo": "O Senhor dos Anéis",
+  "autor":"J.R.R. Tolkien",
+  "img": "../../assets/imagens/sagas1.jpg",
+  "descricao": "Marco para o gênero fantasia com direito a adaptação cinematográfica. A historia gira em torno de Frodo Bolseiro, um Hobbit com a missão de destruir um misterioso anel.",
+  "livros": [{"nome":"O Senhor dos Anéis: A Sociedade do Anel"},{"nome":"O Senhor dos Aneis: As duas torres"},{"nome":"O Senhor dos Anéis: O retorno do rei"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 2,
+  "titulo": "As Crônicas do Gelo e Fogo",
+  "autor":"George R.R Martin",
+  "img": "../../assets/imagens/sagas2.jpg",
+  "descricao": "Série de alta fantasia, os livros narram os acontecimentos dos Sete Reinos, onde uma guerra pela posse do Trono de Ferro é travada. A história se desenvolve principalmente no continente de Westeros.",
+  "livros": [{"nome":"A Guerra dos Tronos"},{"nome":"A Fúria dos Reis "},{"nome":"A Tormenta de Espadas"},{"nome":"O Festim dos Corvos"},{"nome":"A Dança dos Dragões"},{"nome":"Os Ventos do Inverno"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 3,
+  "titulo": "O Guia do Mochileiro das Galáxias",
+  "autor":"Douglas Adams",
+  "img": "../../assets/imagens/sagas3.jpg",
+  "descricao": "Famosa saga entre os amantes de ficção cientifica que virou um marco na cultura geek. O impacto da saga foi tão grande que a cultura geek instaurou o dia da Toalha em Homenagem a serie.",
+  "livros": [{"nome":"O Guia do mochileiro das Galáxias"},{"nome":"O restaurante do fim do universo"},{"nome":"A Vida, O Universo e Tudo Mais"},{"nome":"Até mais, e obrigado pelos peixes"},{"nome":"Praticamente Inofensiva"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 4,
+  "titulo": "Harry Potter",
+  "autor":"JK Rowling",
+  "img": "../../assets/imagens/sagas4.jpg",
+  "descricao": "A saga conta a historia da criança, que sobreviveu ao ataque mortal do lorde das trevas,em sua formação como bruxo na escola de magia e bruxaria de Hogwarts.",
+  "livros": [{"nome":"Harry Potter e a Pedra Filosofal"},{"nome":"Harry Potter e a Câmara Secreta"},{"nome":"Harry Potter e o Prisioneiro de Azkaban"},{"nome":"Harry Potter e o Cálice de Fogo"},{"nome":"Harry Potter e a Ordem da Fênix"},{"nome":"Harry Potter e o Enigma do Príncipe"},{"nome":"Harry Potter e as Relíquias da Morte"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 5,
+  "titulo": "As Crônicas de Nárnia",
+  "autor":"C.S. Lewis",
+  "img": "../../assets/imagens/sagas5.jpg",
+  "descricao": "É outro grande sucesso literário que ganhou adaptação nos cinemas. A historia conta a trajetória das crianças que descobrem um mundo magico escondido em um armário.",
+  "livros": [{"nome":"O Sobrinho do Mago"},{"nome":"O Leão, a Feiticeira e o Guarda-Roupa"},{"nome":"O Cavalo e Seu Menino"},{"nome":"Príncipe Caspian"},{"nome":"A Viagem do Peregrino da Alvorada"},{"nome":"A Cadeira de Prata"},{"nome":"A Última Batalha"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 6,
+  "titulo": "Desventuras em Série",
+  "autor":"Lemony Snicket",
+  "img": "../../assets/imagens/sagas6.png",
+  "descricao": "Conta a historia dos órfãos Baudelaire sob a tutela do conde Olaf, um homem terrível que odeia crianças. Os pais das crianças morrem em um incêndio, e o conde Olaf tenta roubar a fortuna dos órfãos.",
+  "livros": [{"nome":"Mau Começo"},{"nome":"A Sala Dos Répteis"},{"nome":"O Lago Das Sanguessugas"},{"nome":"e mais 10"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 7,
+  "titulo": "Millennium",
+  "autor":"Stieg Larsson",
+  "img": "../../assets/imagens/sagas7.jpg",
+  "descricao": "Aborda o tema sobre violência contra mulheres, baseada na historia do próprio autor, que testemunhou um estupro coletivo de uma jovem chamada Lisbeth, o mesmo nome da protagonista dos livros.",
+  "livros": [{"nome":"Os homens que não amavam as mulheres"},{"nome":"A menina que brincava com fogo"},{"nome":"A rainha do castelo de ar"},{"nome":"A garota na teia de aranha"},{"nome":"O homem que buscava sua sombra"},{"nome":"A garota marcada para morrer"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 8,
+  "titulo": "Feios",
+  "autor":"Scott Westerfeld",
+  "img": "../../assets/imagens/sagas8.jpg",
+  "descricao": "Trata-se de uma serie YA (Young adult) de fantasia e ficção cientifica, com a protagonista Tally Youngblood, neste universo todos os adolescentes de 16 anos devem passar por cirurgias plásticas.",
+  "livros": [{"nome":"Feios"},{"nome":"Perfeitos"},{"nome":"Especiais"},{"nome":"Extras"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 9,
+  "titulo": "The Witcher",
+  "autor":"Andrzej Sapkowski",
+  "img": "../../assets/imagens/sagas9.jpg",
+  "descricao": "Conta a jornada do mítico bruxo Geralt de Rívia, um dos últimos bruxos restantes na terra.  Neste universo, os bruxos são caçadores de monstros em troca de dinheiro.",
+  "livros": [{"nome":"O último desejo"},{"nome":"A espada do destino"},{"nome":"O sangue dos elfos"},{"nome":"Tempo do desprezo"},{"nome":"Batismo de fogo"},{"nome":"A torre de andorinha"},{"nome":"A senhora do lago"}],
+  "cols": 1,
+  "rows": 2
+},
+{
+  "_idSagas": 10,
+  "titulo": "Assassin’s Creed",
+  "autor":"Oliver Bowden",
+  "img": "../../assets/imagens/sagas10.jpg",
+  "descricao": "É baseada nos jogos de mesmo nome da Ubisoft. O enredo foca no desenvolvimento do protagonista Ezio Auditore, um assassino.",
+  "livros": [{"nome":"Renascença"},{"nome":"Irmandade"},{"nome":"A Cruzada Secreta"},{"nome":"Revelações"},{"nome":"Renegado"},{"nome":"Bandeira Negra"},{"nome":"Unity"},{"nome":"Submundo"}],
+  "cols": 1,
+  "rows": 2
+}
+]

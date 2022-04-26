@@ -1,0 +1,43 @@
+<div class="grid-container">
+  <mat-toolbar color="accent">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with qr_code_scanner icon" matTooltip="ISBN">
+      <mat-icon>qr_code_scanner</mat-icon>
+    </button>
+    <span>ISBN</span>
+  </mat-toolbar>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile [colspan]="2" [rowspan]="2"><img class="imgtitulo" src="../../assets/imagens/isbnbn.png"></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <h1 class="titulo">O que é ISBN?</h1>
+    <mat-grid-tile><img class="imagem" src="../../assets/imagens/isbn.png"></mat-grid-tile>
+    <mat-grid-tile class="texto" [colspan]="1" [rowspan]="1"><p>O ISBN (International Standard Book Number/ Padrão Internacional de Numeração de Livro) é um padrão numérico criado com o objetivo de fornecer uma espécie de 'RG' para publicações monográficas, como livros, artigos e apostilas. A difusão global do ISBN e a facilidade com que é lido por redes de varejo, bibliotecas e sistemas gerais de catalogação, tornou-o imprescindível para qualquer publicação. A sequência é criada a partir de um sistema de registro utilizado pelo mercado editorial e livreiro em todo o mundo. Ela é composta de 13 números que indicam o título, o autor, o país, a editora e a edição de uma obra.</p></mat-grid-tile>
+
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="120px">
+    <mat-grid-tile [colspan]="2" rowHeight="1">
+      <h2 class="subtitulo">Saiba mais sobre ISBN</h2>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+      <mat-list cols="2" rowHeight="1" role="list" >
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/duvidas-frequentes-isbn/">Dúvidas frequentes</a></mat-list-item>
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/historia/">História</a></mat-list-item>
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/objetivo/">Objetivo</a></mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+      <mat-list role="list">
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/estrutura/">Estrutura</a></mat-list-item>
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/vantagens/">Vantagens</a></mat-list-item>
+        <mat-list-item role="listitem"><a class="link" href="https://www.cblservicos.org.br/isbn/como-solicitar-um-isbn/">Como solicitar ISBN</a></mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+  </mat-grid-list>
+  </div>
+  <ng-template #loading>
+    <div class="loading-spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+
+

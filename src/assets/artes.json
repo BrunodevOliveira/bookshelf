@@ -1,0 +1,12 @@
+[
+  {"_idArtes":"1", "tituloArtes": "O que é arte?", "autorArtes":"Leon Tostói", "isbnArtes":"8535930914", "editoraArtes":"Nova Fronteira", "anoArtes":"2016"},
+  {"_idArtes":"2", "tituloArtes": "A história da arte", "autorArtes":"E. H. Gombrich", "isbnArtes":"9788581861531", "editoraArtes":"LTC", "anoArtes":"2000"},
+  {"_idArtes":"3", "tituloArtes": "Tudo sobre arte", "autorArtes":"Stephen Farthing", "isbnArtes":"8531602580", "editoraArtes":"Sextante", "anoArtes":"2018"},
+  {"_idArtes":"4", "tituloArtes": "Arte Moderna", "autorArtes":"Giulio Argan", "isbnArtes":"8539006200", "editoraArtes":"Companhia das Letras", "anoArtes":"1992"},
+  {"_idArtes":"5", "tituloArtes": "Isso é arte?", "autorArtes":"Will Gompertz", "isbnArtes":"6580634324", "editoraArtes":"Zahar", "anoArtes":"2013"},
+  {"_idArtes":"6", "tituloArtes": "A definição de arte", "autorArtes":"Umberto Eco", "isbnArtes":"8504021319", "editoraArtes":"Record", "anoArtes":"2016"},
+  {"_idArtes":"7", "tituloArtes": "A arte de ver a arte", "autorArtes":"Susan Woodford", "isbnArtes":"6555600314", "editoraArtes":"Zahar", "anoArtes":"1983"},
+  {"_idArtes":"8", "tituloArtes": "História da arte brasileira", "autorArtes":"P. M. Gardi", "isbnArtes":"8537814121", "editoraArtes":"Melhoramentos", "anoArtes":"1975"},
+  {"_idArtes":"9", "tituloArtes": "As cores de Van Goch", "autorArtes":"Jeff Jarvis", "isbnArtes":"8520429424", "editoraArtes":"Companhia das Letras", "anoArtes":"2008"},
+  {"_idArtes":"10", "tituloArtes": "O grande livro de arte", "autorArtes":"Susie Hodge", "isbnArtes":"8551302728", "editoraArtes":"Ciranda Cultural", "anoArtes":"2015"}
+]

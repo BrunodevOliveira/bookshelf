@@ -1,0 +1,88 @@
+  <mat-card mat-elevation-z5>
+    <div class="form-container mat-elevation-z5">
+      <img mat-card-image src="../../assets/imagens/cover2.png" alt="Cover do Cadastro de Usuários">
+      <h3>Siga os passos para realizar o cadastro:</h3>
+      <button mat-raised-button (click)="isEditable = !isEditable" matTooltip="Altere suas informações">
+        {{!isEditable ? 'Habilitar edição' : 'Desabilitar edição'}}
+      </button>
+      <form [formGroup]="formularioCadastro" (ngSubmit)="enviaCadastro()">
+          <mat-stepper linear #stepper orientation="vertical">
+
+            <mat-step [stepControl]="nomeCadastro" [editable]="isEditable">
+              <mat-form-field>
+                <input matInput placeholder="nome" formControlName="nome" >
+                <mat-error *ngIf="nome?.errors?.['required']">
+                  Nome obrigatório
+                </mat-error>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperNext>Próximo</button>
+              </div>
+              </mat-step>
+
+              <mat-step [stepControl]="fotoCadastro" [editable]="isEditable">
+                <mat-form-field>
+                  <input matInput placeholder="Insira a URL da sua foto" formControlName="url">
+                  <mat-error *ngIf="url?.errors?.['required']">
+                    URL obrigatória
+                  </mat-error>
+                  <mat-error *ngIf="url?.errors?.['email']">
+                    Entre com um formato de e-mail correto
+                  </mat-error>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Voltar</button>
+                  <button mat-button matStepperNext>Próximo</button>
+                </div>
+              </mat-step>
+
+              <mat-step [stepControl]="emailCadastro" [editable]="isEditable">
+                <mat-form-field>
+                  <input matInput placeholder="email" formControlName="email" >
+                  <mat-error *ngIf="email?.errors?.['required']">
+                    Email obrigatório
+                  </mat-error>
+                  <mat-error *ngIf="email?.errors?.['email']">
+                    Favor digitar um e-mail válido.
+                  </mat-error>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Voltar</button>
+                  <button mat-button matStepperNext>Próximo</button>
+                </div>
+              </mat-step>
+
+              <mat-step [stepControl]="senhaCadastro" [editable]="isEditable">
+              <mat-form-field>
+                <input matInput placeholder="senha" formControlName="senha" type="password" >
+                <mat-error *ngIf="senha?.errors?.['required']">
+                  Senha obrigatória
+                </mat-error>
+              </mat-form-field>
+              <div>
+                <button mat-button matStepperPrevious>Voltar</button>
+                <button mat-button matStepperNext>Próximo</button>
+              </div>
+              </mat-step>
+
+              <mat-step [stepControl]="confirmaSenhaCadastro" [editable]="isEditable">
+                <mat-form-field>
+                  <input matInput placeholder="confirme a senha" formControlName="confirmaSenha" type="password" >
+                  <mat-error *ngIf="confirmaSenha?.errors?.['required']">
+                    Confirmação de senha obrigatória
+                  </mat-error>
+                </mat-form-field>
+                <mat-error *ngIf="formularioCadastro.errors?.['senhasDiferentes']">
+                  Senhas não são iguais
+                </mat-error>
+                <div class="center margin-top">
+                  <button mat-raised-button color="primary" type="submit">
+                    Cadastre-se
+                  </button>
+                </div>
+              </mat-step>
+
+            </mat-stepper>
+        </form>
+    </div>
+  </mat-card>

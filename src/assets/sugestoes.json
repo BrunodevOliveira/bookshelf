@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Sapiens: Uma breve história da humanidade",
+    "subtitulo":"Yuval Harari",
+    "img": "../../assets/imagens/sugestao1.jpg",
+    "conteudo":"Yuval Harari, doutor em história, aborda a história da humanidade sob uma perspectiva inovadora. Explica que o ca­pitalismo é a mais bem-sucedida religião; que o imperialismo é o sistema político mais lucrativo; que nós, humanos modernos, embora sejamos muito mais poderosos que nossos ancestrais, provavelmente não somos mais felizes.",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "O guia do mochileiro das galáxias - Edição Ilustrada",
+    "subtitulo":"Douglas Adams",
+    "img": "../../assets/imagens/sugestao2.jpg",
+    "conteudo":"Arthur Dent já estava tendo um dia péssimo antes mesmo de a Terra ser demolida para abrir espaço para uma via expressa hiperespacial. E depois disso as coisas ficaram muito, muito piores. Com apenas uma toalha, um peixinho amarelo e um livro, Arthur vai ser obrigado a navegar por um universo hostil na companhia de alienígenas pouco confiáveis.",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "Amar-se: Uma Viagem em Busca de Si Mesmo",
+    "subtitulo":"Marcos Lacerda",
+    "img": "../../assets/imagens/sugestao3.jpg",
+    "conteudo":" ''UMA VIAGEM TODA SUA! Que delícia é viajar! Fazer os preparativos, escolher o roteiro, procurar informações sobre os melhores lugares para se hospedar, os pontos turísticos... Mas, e quando a viagem tem como destino você mesmo? Como fazer as reservas, preparar as malas e cair na estrada? Pois é nesse tour que vamos embarcar. E de primeira classe!''",
+    "cols": 1,
+    "rows": 2
+  },
+  {
+    "titulo": "O homem mais rico da Babilônia",
+    "subtitulo":"George Clason",
+    "img": "../../assets/imagens/sugestao4.jpg",
+    "conteudo":"Com mais de dois milhões de exemplares vendidos no mundo todo, O homem mais rico da Babilônia é um clássico sobre como multiplicar riqueza e solucionar problemas financeiros. Baseando-se nos segredos de sucesso dos antigos babilônicos, George S. Clason mostra soluções ao mesmo tempo sábias e muito atuais para evitar a falta de dinheiro.",
+    "cols": 1,
+    "rows": 2
+  }
+]

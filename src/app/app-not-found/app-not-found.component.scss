@@ -1,0 +1,30 @@
+.error-card {
+  // max-width: 1200px;
+  // max-height: 90%;
+  height: 100%;
+  width: 100%;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  color: #7E57C2;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 20px;
+}
+
+button:hover {
+  color: #8C52FF;
+  font-size: 26px;
+}
+
+.container {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+}

@@ -1,0 +1,56 @@
+<div>
+  <div>
+    <div class="grid-container">
+      <mat-form-field appearance="fill" style="width: 100%; text-align: center;" >
+        <mat-label>Busque uma sugestão de livro</mat-label>
+        <input matInput #searchInput />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="grid-container" *ngIf="result$ | async as busca">
+      <mat-grid-list [cols]="breakpoint" rowHeight="180px" (window:resize)="handleSize($event)">
+        <mat-grid-tile *ngFor="let busca of result$ | async " [rowspan]="busca.rows">
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>{{busca.titulo}}</mat-card-title>
+              <mat-card-subtitle>{{busca.subtitulo}}</mat-card-subtitle>
+              <img mat-card-image class="imgcard" [src]="busca.img" [alt]="busca.titulo">
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div>{{busca.conteudo}}</div>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+
+  <div class="grid-container" *ngIf="cards$ | async as card; else loading">
+    <mat-toolbar color="accent">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with library_books icon" matTooltip="Sugestões">
+        <mat-icon>library_books</mat-icon>
+      </button>
+      <span>SUGESTÕES DE LIVROS</span>
+    </mat-toolbar>
+    <mat-grid-list [cols]="breakpoint" rowHeight="180px" (window:resize)="handleSize($event)">
+      <mat-grid-tile *ngFor="let card of cards$ | async" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{card.titulo}}</mat-card-title>
+            <mat-card-subtitle>{{card.subtitulo}}</mat-card-subtitle>
+            <img mat-card-image class="imgcard" [src]="card.img" [alt]="card.titulo">
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>{{card.conteudo}}</div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

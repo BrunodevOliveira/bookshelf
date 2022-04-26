@@ -1,0 +1,42 @@
+<div mat-dialog-content >
+  <mat-card class="example-card form-container">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+  <mat-card-title>{{conteudo}}</mat-card-title>
+      <mat-card-subtitle>Entre na estante</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image src="../../assets/imagens/4.png" alt="Banner de Login">
+      <form [formGroup]="formularioLogin" (ngSubmit)="loginFirebase()">
+        <mat-form-field>
+          <input matInput placeholder="Email de Login" formControlName="email">
+          <mat-error *ngIf="email?.errors?.['required']">É necessário informar um e-mail</mat-error>
+          <mat-error *ngIf="email?.errors?.['email']">O formato do e-mail não é valido</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Digite sua senha" formControlName="senha" type="password">
+          <mat-error *ngIf="senha?.errors?.['required']">Esqueceu a senha</mat-error>
+        </mat-form-field>
+        <mat-card-footer>
+          <button mat-raised-button color="accent" type="submit" *ngIf="tentativas < 3">Entrar</button>
+          <button mat-raised-button mat-dialog-close color="primary" [ngClass]="{'tentativas': tentativas >= 3}">Fechar</button>
+          <a routerLink="/recuperar">Esqueci minha senha</a>
+        </mat-card-footer>
+        <p class="tentativas-p" *ngIf="tentativas > 0">Número de tentativas de login: <strong class="tentativas-n">{{tentativas}}</strong></p>
+        <div class="loginGoogle">
+          <span>Ou entre com sua conta Google: </span>
+          <button type="button" (click)="abrirLoginGoogle()" mat-raised-button >
+            <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/imagem-google-logo-com-fundo-transparente-1.png" width="30" height="30">
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+    <span>Você ainda <strong>não tem cadastro?</strong> clique <a routerLink="/app-app-cadastro" (click)="fecharDialogo()">aqui</a>
+      e venha fazer parte desta comunidade de leitores.</span>
+  </mat-card>
+</div>
+<div class="captcha" [hidden]="captcha" *ngIf="tentativas >= 3">
+  <re-captcha siteKey="6Lc_SEYeAAAAABDriNFirQpp5E0xMFI1RY9x7Tk8" (resolved)="resolverCaptcha($event)">
+  </re-captcha>
+</div>
+<div [hidden]="!captcha"></div>
